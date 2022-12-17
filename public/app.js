@@ -10,7 +10,7 @@ app.use(express.json());
 let backendUrl = location.protocol === 'file:' ? "https://tiktok-chat-reader.zerody.one/" : undefined;
 let connection = new TikTokIOConnection(backendUrl);
 
-const connectionConfig = {host:"dccia.ml",user:"ltqffwvi_tiktok",password:"YoMama11785!",database:"ltqffwvi_tiktok"}// Create a connection driver
+const connectionConfig = {host:"ec2-34-231-63-30.compute-1.amazonaws.com",user:"mobsqprqsivjyn",password:"9bf5a91287bba85adf9fd26c9c347756663fb4896b5049a3d5571cb7e529ad76!",database:"d2i67jdbb5vg38"}// Create a connection driver
 const connetion = mysql.createConnection(connectionConfig);// Connect to the MySQL Server
 connetion.connect((err)=>{if(err){
     console.log("ERROR:: "+ err);return;}
