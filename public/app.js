@@ -2,6 +2,15 @@
 let backendUrl = location.protocol === 'file:' ? "https://tiktok-chat-reader.zerody.one/" : undefined;
 let connection = new TikTokIOConnection(backendUrl);
 
+const connectionConfig = {host:"localhost",user:"root",password:"test@1234",database:"mydb"}// Create a connection driver
+const connetion = mysql.createConnection(connectionConfig);// Connect to the MySQL Server
+connetion.connect((err)=>{if(err){
+    console.log("ERROR:: "+ err)return;}
+
+  console.log(`✅ database connection successful!`)});
+
+
+
 // Counter
 let viewerCount = 0;
 let likeCount = 0;
