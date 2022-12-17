@@ -5,7 +5,7 @@ let connection = new TikTokIOConnection(backendUrl);
 const connectionConfig = {host:"dccia.ml",user:"ltqffwvi_tiktok",password:"YoMama11785!",database:"ltqffwvi_tiktok"}// Create a connection driver
 const connetion = mysql.createConnection(connectionConfig);// Connect to the MySQL Server
 connetion.connect((err)=>{if(err){
-    console.log("ERROR:: "+ err)return;}
+    console.log("ERROR:: "+ err);return;}
 
   console.log(`✅ database connection successful!`)});
 
