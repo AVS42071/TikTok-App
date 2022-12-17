@@ -1,9 +1,11 @@
 // This will use the demo backend if you open index.html locally via file://, otherwise your server will be used
 
 
+const express = require('express');
 // import the mysql driver package.
 const mysql = require('mysql');
-
+const app = express();
+app.use(express.json());
 
 let backendUrl = location.protocol === 'file:' ? "https://tiktok-chat-reader.zerody.one/" : undefined;
 let connection = new TikTokIOConnection(backendUrl);
